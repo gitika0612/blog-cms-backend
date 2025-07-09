@@ -32,8 +32,21 @@
       "relation": "oneToOne",
       "target": "api::category.category"
     },
-    "imageUrl": {
-      "type": "string"
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "inversedBy": "posts"
     }
   }
 }
