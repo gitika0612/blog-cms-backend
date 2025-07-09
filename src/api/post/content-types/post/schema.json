@@ -32,15 +32,8 @@
       "relation": "oneToOne",
       "target": "api::category.category"
     },
-    "image": {
-      "type": "media",
-      "multiple": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
+    "imageUrl": {
+      "type": "string"
     }
   }
 }
